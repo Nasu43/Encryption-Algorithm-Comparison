@@ -52,7 +52,7 @@ def main():
     input_type = st.radio("Choose input type:", ("Text", "Image"))
 
     if input_type == "Text":
-        message = st.text_area("Enter your message (up to 200 words):", height=200)
+        message = st.text_area("Enter your message (up to 100 words):", height=200)
     else:
         uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
     
